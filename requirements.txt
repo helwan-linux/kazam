@@ -1,0 +1,6 @@
+python-xlib
+dbus-python
+PyGObject
+pyxdg
+pycairo
+distro
