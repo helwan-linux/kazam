@@ -26,23 +26,26 @@ makedepends=(
     'python-setuptools'
 )
 
-source=(
-    "https://launchpad.net/kazam/1.4/1.4.5/+download/kazam-${pkgver}.tar.gz"
-)
-
+source=("git+https://github.com/helwan-linux/kazam.git")
 sha256sums=('SKIP')
 
 build() {
-    cd "${srcdir}/${pkgname}-${pkgver}"
+    cd "${srcdir}/${pkgname}"
 
     python setup.py build
 }
 
 package() {
-    cd "${srcdir}/${pkgname}-${pkgver}"
+    cd "${srcdir}/${pkgname}"
 
     python setup.py install \
         --root="${pkgdir}" \
         --optimize=1 \
         --skip-build
+
+    # نسخ ملف الـ desktop
+    install -Dm644 data/kazam.desktop "${pkgdir}/usr/share/applications/kazam.desktop"
+
+    # تعديل مسار الأيقونة الصحيح حسب شجرة ملفاتك
+    install -Dm644 data/icons/128x128/apps/kazam.png "${pkgdir}/usr/share/icons/hicolor/128x128/apps/kazam.png"
 }
