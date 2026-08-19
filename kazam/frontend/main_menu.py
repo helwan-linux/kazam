@@ -71,8 +71,8 @@ class MainMenu(GObject.GObject):
         ])
 
         self.uimanager = Gtk.UIManager()
-        self.uimanager.add_ui_from_string(MENUBAR)
         self.uimanager.insert_action_group(self.action_group)
+        self.uimanager.add_ui_from_string(MENUBAR)
         self.menubar = self.uimanager.get_widget("/MenuBar")
 
     def cb_file_quit(self, action):
