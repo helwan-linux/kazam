@@ -1,11 +1,12 @@
-# Maintainer: Saeed Badreldin <saeed@helwanlinux.org>
+# Maintainer: Saeed Badreldin <helwanlinux@gmail.org>
+
 pkgname=kazam
 pkgver=1.4.5
 pkgrel=1
-pkgdesc="A screencast application (Custom Helwan build)"
+pkgdesc="Simple desktop recording and screenshot tool"
 arch=('any')
-url="https://github.com/helwan-linux/kazam"
-license=('LGPL')
+url="https://launchpad.net/kazam"
+license=('GPL3')
 
 depends=(
     'python'
@@ -21,18 +22,27 @@ depends=(
     'pulseaudio'
 )
 
-makedepends=('git' 'python-setuptools')
-provides=('kazam')
-conflicts=('kazam')
-source=("$pkgname::git+$url.git")
+makedepends=(
+    'python-setuptools'
+)
+
+source=(
+    "https://launchpad.net/kazam/1.4/1.4.5/+download/kazam-${pkgver}.tar.gz"
+)
+
 sha256sums=('SKIP')
 
 build() {
-    cd "$pkgname"
+    cd "${srcdir}/${pkgname}-${pkgver}"
+
     python setup.py build
 }
 
 package() {
-    cd "$pkgname"
-    python setup.py install --root="$pkgdir" --optimize=1
+    cd "${srcdir}/${pkgname}-${pkgver}"
+
+    python setup.py install \
+        --root="${pkgdir}" \
+        --optimize=1 \
+        --skip-build
 }
