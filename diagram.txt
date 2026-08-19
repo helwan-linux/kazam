@@ -1,0 +1,204 @@
+kazam/
+📁 kazam/
+├── 📄 .gitignore
+├── 📄 .pypirc
+├── 📄 AUTHORS
+├── 📄 COPYING
+├── 📄 COPYING.LGPL
+├── 📄 MANIFEST.in
+├── 📄 NEWS
+├── 📄 README.md
+├── 📄 TODO
+├── 📁 bin
+│   └── 📄 kazam
+├── 📁 data
+│   ├── 📁 icons
+│   │   ├── 📄 128.svg
+│   │   ├── 📁 128x128
+│   │   │   └── 📁 apps
+│   │   │       └── 📄 kazam.png
+│   │   ├── 📄 14.svg
+│   │   ├── 📁 14x14
+│   │   │   └── 📄 kazam.png
+│   │   ├── 📄 16.svg
+│   │   ├── 📁 16x16
+│   │   │   └── 📁 apps
+│   │   │       └── 📄 kazam.png
+│   │   ├── 📁 192x192
+│   │   │   └── 📄 kazam.png
+│   │   ├── 📄 22.svg
+│   │   ├── 📁 22x22
+│   │   │   ├── 📁 apps
+│   │   │   │   └── 📄 kazam.png
+│   │   │   └── 📁 status
+│   │   │       ├── 📄 kazam-countdown.png
+│   │   │       ├── 📄 kazam-paused.png
+│   │   │       ├── 📄 kazam-recording.png
+│   │   │       └── 📄 kazam-stopped.png
+│   │   ├── 📄 32.svg
+│   │   ├── 📁 32x32
+│   │   │   └── 📁 apps
+│   │   │       ├── 📄 kazam-all-screens.png
+│   │   │       ├── 📄 kazam-area.png
+│   │   │       ├── 📄 kazam-fullscreen.png
+│   │   │       ├── 📄 kazam-screencast.png
+│   │   │       ├── 📄 kazam-screenshot.png
+│   │   │       ├── 📄 kazam-window.png
+│   │   │       └── 📄 kazam.png
+│   │   ├── 📄 48.svg
+│   │   ├── 📁 48x48
+│   │   │   └── 📁 apps
+│   │   │       └── 📄 kazam.png
+│   │   ├── 📄 64.svg
+│   │   ├── 📁 64x64
+│   │   │   ├── 📁 apps
+│   │   │   │   └── 📄 kazam.png
+│   │   │   └── 📁 icons
+│   │   │       └── 📄 kazam.png
+│   │   ├── 📁 dark
+│   │   │   ├── 📄 kazam-all-screens.png
+│   │   │   ├── 📄 kazam-area.png
+│   │   │   ├── 📄 kazam-fullscreen.png
+│   │   │   ├── 📄 kazam-screencast.png
+│   │   │   ├── 📄 kazam-screenshot.png
+│   │   │   └── 📄 kazam-window.png
+│   │   ├── 📁 scalable
+│   │   │   ├── 📄 kazam-all-screens-symbolic.svg
+│   │   │   ├── 📄 kazam-area-symbolic.svg
+│   │   │   ├── 📄 kazam-broadcast-symbolic.svg
+│   │   │   ├── 📄 kazam-fullscreen-symbolic.svg
+│   │   │   ├── 📄 kazam-ocr-symbolic.svg
+│   │   │   ├── 📄 kazam-screencast-symbolic.svg
+│   │   │   ├── 📄 kazam-screenshot-symbolic.svg
+│   │   │   ├── 📄 kazam-webcam-symbolic.svg
+│   │   │   └── 📄 kazam-window-symbolic.svg
+│   │   └── 📄 scalable.svg
+│   ├── 📄 kazam.desktop
+│   ├── 📄 kazam.desktop.in
+│   ├── 📁 sounds
+│   │   ├── 📄 Canon 7D.ogg
+│   │   └── 📄 Nikon D80.ogg
+│   └── 📁 ui
+│       ├── 📄 kazam.ui
+│       └── 📄 preferences.ui
+├── 📁 img
+│   ├── 📄 Kazam_001.png
+│   └── 📄 Kazam_002.png
+├── 📁 kazam
+│   ├── 📄 __init__.py
+│   ├── 📄 app.py
+│   ├── 📁 backend
+│   │   ├── 📄 __init__.py
+│   │   ├── 📄 config.py
+│   │   ├── 📄 grabber.py
+│   │   ├── 📄 gstreamer.py
+│   │   ├── 📄 keypress.py
+│   │   ├── 📄 listkeys-subprocess.py
+│   │   ├── 📄 neoocr.py
+│   │   ├── 📄 portal.py
+│   │   ├── 📄 prefs.py
+│   │   ├── 📄 session.py
+│   │   ├── 📄 utils.py
+│   │   └── 📄 webcam.py
+│   ├── 📁 frontend
+│   │   ├── 📄 __init__.py
+│   │   ├── 📄 about_dialog.py
+│   │   ├── 📄 combobox.py
+│   │   ├── 📄 done_recording.py
+│   │   ├── 📄 indicator.py
+│   │   ├── 📄 main_menu.py
+│   │   ├── 📄 preferences.py
+│   │   ├── 📄 save_dialog.py
+│   │   ├── 📄 widgets.py
+│   │   ├── 📄 window_area.py
+│   │   ├── 📄 window_area_wl.py
+│   │   ├── 📄 window_countdown.py
+│   │   ├── 📄 window_keypress.py
+│   │   ├── 📄 window_outline.py
+│   │   ├── 📄 window_select.py
+│   │   └── 📄 window_webcam.py
+│   ├── 📄 instant.py
+│   ├── 📁 pulseaudio
+│   │   ├── 📄 __init__.py
+│   │   ├── 📄 ctypes_pulseaudio.py
+│   │   ├── 📄 error_handling.py
+│   │   └── 📄 pulseaudio.py
+│   ├── 📁 tests
+│   │   ├── 📄 __init__.py
+│   │   └── 📄 test_app.py
+│   ├── 📄 utils.py
+│   └── 📄 version.py
+├── 📄 kazam.png
+├── 📁 po
+│   ├── 📄 POTFILES.in
+│   ├── 📄 POTFILES.skip
+│   ├── 📄 ar.po
+│   ├── 📄 ast.po
+│   ├── 📄 bg.po
+│   ├── 📄 bn.po
+│   ├── 📄 ca.po
+│   ├── 📄 ckb.po
+│   ├── 📄 cs.po
+│   ├── 📄 da.po
+│   ├── 📄 de.po
+│   ├── 📄 el.po
+│   ├── 📄 en_AU.po
+│   ├── 📄 en_CA.po
+│   ├── 📄 en_GB.po
+│   ├── 📄 eo.po
+│   ├── 📄 es.po
+│   ├── 📄 eu.po
+│   ├── 📄 fa.po
+│   ├── 📄 fi.po
+│   ├── 📄 fo.po
+│   ├── 📄 fr.po
+│   ├── 📄 gl.po
+│   ├── 📄 hr.po
+│   ├── 📄 hu.po
+│   ├── 📄 id.po
+│   ├── 📄 is.po
+│   ├── 📄 it.po
+│   ├── 📄 ja.po
+│   ├── 📄 kazam.pot
+│   ├── 📄 ko.po
+│   ├── 📄 ku.po
+│   ├── 📄 la.po
+│   ├── 📄 lt.po
+│   ├── 📄 lv.po
+│   ├── 📄 ml.po
+│   ├── 📄 ms.po
+│   ├── 📄 ne.po
+│   ├── 📄 nl.po
+│   ├── 📄 oc.po
+│   ├── 📄 pl.po
+│   ├── 📄 pt.po
+│   ├── 📄 pt_BR.po
+│   ├── 📄 pt_PT.po
+│   ├── 📄 ro.po
+│   ├── 📄 ru.po
+│   ├── 📄 sk.po
+│   ├── 📄 sl.po
+│   ├── 📄 sr.po
+│   ├── 📄 sv.po
+│   ├── 📄 ta.po
+│   ├── 📄 te.po
+│   ├── 📄 tr.po
+│   ├── 📄 uk.po
+│   ├── 📄 uz.po
+│   ├── 📄 vi.po
+│   ├── 📄 zh_CN.po
+│   └── 📄 zh_TW.po
+├── 📄 pyproject.toml
+├── 📄 requirements.txt
+├── 📄 setup.py
+├── 📁 share
+│   └── 📄 kazam
+├── 📄 snapcraft.yaml
+└── 📁 tests
+    ├── 📄 conftest.py
+    ├── 📄 test_config_restore_token.py
+    ├── 📄 test_crop_math.py
+    ├── 📄 test_gstreamer_source.py
+    ├── 📄 test_portal_helpers.py
+    ├── 📄 test_session.py
+    └── 📄 test_smoke.py
