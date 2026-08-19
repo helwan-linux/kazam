@@ -6,7 +6,21 @@ pkgdesc="A screencast application (Custom Helwan build)"
 arch=('any')
 url="https://github.com/helwan-linux/kazam"
 license=('LGPL')
-depends=('python' 'python-gobject' 'gstreamer' 'gst-plugins-good' 'gst-plugins-bad' 'pulseaudio')
+
+depends=(
+    'python'
+    'python-xlib'
+    'python-dbus'
+    'python-gobject'
+    'python-pyxdg'
+    'python-cairo'
+    'python-distro'
+    'gstreamer'
+    'gst-plugins-good'
+    'gst-plugins-bad'
+    'pulseaudio'
+)
+
 makedepends=('git' 'python-setuptools')
 provides=('kazam')
 conflicts=('kazam')
