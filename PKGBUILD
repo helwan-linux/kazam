@@ -34,7 +34,6 @@ build() {
 
     python setup.py build
 }
-
 package() {
     cd "${srcdir}/${pkgname}"
 
@@ -46,6 +45,10 @@ package() {
     # نسخ ملف الـ desktop
     install -Dm644 data/kazam.desktop "${pkgdir}/usr/share/applications/kazam.desktop"
 
-    # تعديل مسار الأيقونة الصحيح حسب شجرة ملفاتك
+    # نسخ الأيقونة
     install -Dm644 data/icons/128x128/apps/kazam.png "${pkgdir}/usr/share/icons/hicolor/128x128/apps/kazam.png"
+    
+    # نسخ ملف الواجهة والصورة مباشرة من مجلد البناء
+    install -Dm644 data/ui/kazam.ui "$pkgdir/usr/share/kazam/ui/kazam.ui"
+    install -Dm644 data/ui/hl.png "$pkgdir/usr/share/kazam/ui/hl.png"
 }
