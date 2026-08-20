@@ -31,6 +31,7 @@ except (OSError, AttributeError):
     VERSION = "1.0.0"
 
 data_files = [('share/kazam/ui/', glob.glob('data/ui/*ui')),
+              ('share/kazam/ui/', ['data/ui/hl.png']),
               ('share/kazam/sounds/', glob.glob('data/sounds/*ogg')),
               ('share/icons/gnome/scalable/apps/', glob.glob('data/icons/scalable/*svg')),
               ]
