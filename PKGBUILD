@@ -1,7 +1,7 @@
 # Maintainer: Saeed Badreldin <helwanlinux@gmail.org>
 
 pkgname=kazam
-pkgver=1.4.5
+pkgver=2.0.0
 pkgrel=1
 pkgdesc="Simple desktop recording and screenshot tool"
 arch=('any')
